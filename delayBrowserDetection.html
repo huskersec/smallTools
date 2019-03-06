@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body style="background-color:lightgrey;">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src=https://fontawesome.com/b4e29333a3.js></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bowser/1.9.3/bowser.min.js"></script>
+
+<script type="text/javascript">
+
+	function Redirect() 
+    {  
+        window.location="https://www.google.com"; 
+    } 
+
+
+	if (bowser.name == "Internet Explorer"){
+		var newContent='<center><h2 class="centered" style="font-family: Arial;font-style:oblique">Please wait while the document load.<br><br><br><I class="fa fa-spinner fa-spin" style="font-size:96px"></I></center>'
+		document.write(newContent);
+		setTimeout('Redirect()', 5000);
+	}
+	else{
+		var newContent='<center><h2 class="centered" style="font-family: Arial;font-style:oblique"><p style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em;">Please reopen link in Internet Explorer.<br><br><br><I class="fa fa-cog" style="font-size:140px"></I></p></center>'
+		document.write(newContent);
+	}
+
+</script>
+
+</body>
+</html>
