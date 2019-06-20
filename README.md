@@ -1,1 +1,0 @@
-Set of smaller tools made though necessity and laziness.
